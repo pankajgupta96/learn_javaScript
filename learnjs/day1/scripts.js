@@ -1,11 +1,11 @@
-let index = document.getElementById('text').addEventListener("input",function(){
-    index = this.value;
+let number= document.getElementById('text').addEventListener("input",function(){
+    number = this.value;
 })
 
-function printstar(index){
+function printstar(number){
       let result = "";
          
-    for( let i= 1 ; i<=index; i++){
+    for( let i= 1 ; i<=number; i++){
         let str = "";
 
         for( let j = 1 ; j<=i; j++){
