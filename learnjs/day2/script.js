@@ -1,28 +1,9 @@
-// let n= document.getElementById('text').addEventListener("input",function(){
-//     n = this.value;
-// })
-
-// function printstar(n){
-//       let result = "";
-         
-//     for( let i= 1 ; i<=n; i++){
-//         let str = "";
-
-//         for( let j = 1 ; j<=i; j++){
-//            str += "* ";
-//         }
-
-        
-//         console.log(str);
-//         result += str + "<br>";
-//     }
-//       return result;
-// }
-
-let n= document.getElementById('text').value;
 
 
-function printstar2(n){
+function printstar2(){
+
+    
+    let n= document.getElementById('text').value;
      
     let result = "";
     for( let i = 1 ; i<=2*n-1;i++){
@@ -49,7 +30,7 @@ function printstar2(n){
 printstar2();
 
 document.getElementById("submit").addEventListener("click",function(){
-    document.getElementById("result").innerHTML = printstar2(n);
+    document.getElementById("result").innerHTML = printstar2();
 })
 
 document.getElementById("clear").addEventListener("click",function(){
@@ -58,6 +39,3 @@ document.getElementById("clear").addEventListener("click",function(){
 
     
 })
-
-
-
