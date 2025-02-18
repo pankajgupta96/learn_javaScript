@@ -1,55 +1,31 @@
-// let n= document.getElementById('text').addEventListener("input",function(){
-//     n = this.value;
-// })
+let n= document.getElementById('text').addEventListener("input",function(){
+    n = this.value;
+})
 
-// function printstar(n){
-//       let result = "";
+function printstar(n){
+      let result = "";
          
-//     for( let i= 1 ; i<=n; i++){
-//         let str = "";
+    for( let i= 1 ; i<=n; i++){
+        let str = "";
 
-//         for( let j = 1 ; j<=i; j++){
-//            str += "* ";
-//         }
+        for( let j = 1 ; j<=i; j++){
+           str += "* ";
+        }
 
         
-//         console.log(str);
-//         result += str + "<br>";
-//     }
-//       return result;
-// }
-
-let n= document.getElementById('text').value;
-
-
-function printstar2(n){
-     
-    let result = "";
-    for( let i = 1 ; i<=2*n-1;i++){
-        let str = ""
-        if(i<n){
-        for ( let j = 1 ; j<=i && i <=n ; j++){
-            str += "* ";
-        }
+        console.log(str);
         result += str + "<br>";
     }
-        else{
-           for( let k = i ; k <= 2*n-1 ;k++){
-            str += "* ";
-            
-        }
-        result += str +"<br>";
-        }
-
-       
-    }
-    return result;
+      return result;
 }
 
-printstar2();
+
+
+
+printstar(n);
 
 document.getElementById("submit").addEventListener("click",function(){
-    document.getElementById("result").innerHTML = printstar2(n);
+    document.getElementById("result").innerHTML = printstar(n);
 })
 
 document.getElementById("clear").addEventListener("click",function(){
