@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="heading">
+            <h3>Student scorecard</h3>
+        </div>
+        
+        <div id="student-name">
+            <label for="name">Student Name</label>
+            <input type="text" id ="name">
+        </div>
+
+       <div class="table">
+        
+        <table >
+            <thead>
+             <tr class ="tableheading">
+                <th>Students Details</th>
+                <th>Marks</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr class ="hindiheading">
+                <td>Hindi</td>
+                <td><input type="number" class = "inputnumber"  id = "hindiinput"></td>
+                
+            </tr>
+            <tr>
+                <td>English</td>
+                <td> <input type="number" class = "inputnumber"  id ="englishinput" > </td>
+              
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td><input type="number" class = "inputnumber"  id = "mathinput"></td>
+              
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td><input type="number" class = "inputnumber" id = "Physicsinput"></td>
+              
+            </tr>
+            <tr>
+                <td>Chemsitry</td>
+                <td><input type="number" class = "inputnumber" id = "Chemsitryinput"></td>
+              
+            </tr>
+            </tbody>
+    
+
+        </table>
+        </div>
+
+        <div id="totalmarks">
+            <p>Totalmarks</p>
+            <div id ="result"></div>
+        </div>
+
+        <button id ="show-result" >Show Result</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
